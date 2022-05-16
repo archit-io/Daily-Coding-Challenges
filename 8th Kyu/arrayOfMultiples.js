@@ -19,3 +19,18 @@ function countBy(x, n) {
     }    
     return z;
   }
+
+// Other Answers
+
+//   const countBy = (x, n) => Array.from({length: n}, (v, k) => (k + 1) * x)
+
+
+// const countBy = (x, n) =>
+//   [...Array(n)].map((_, idx) => ++idx * x);
+
+
+// function countBy(x, n){
+//   return Array.apply(0, Array(n)).map(function(v, i){
+//     return (i + 1) * x;
+//   });
+// }
